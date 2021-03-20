@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "linnian-apps-chatter"
-version = "0.1.6"
+version = "0.1.7"
 description = "qwq"
 authors = ["LinNian <2544704967@qq.com>"]
 license = "MIT"
