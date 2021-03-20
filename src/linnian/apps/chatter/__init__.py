@@ -28,8 +28,7 @@ class Chater():
     async def get_reply(self, key: Key) -> Reply:
         """
         当有结果时返回Reply实例\n
-        (由于能力问题，好像自动补全有问题 Reply实例包含reply，member，mirai_code三个变量供使用)\n
-        ，没有则返回None   OwO\n
+        没有则返回None   OwO\n
         需要一个Key实例\n
         可以从linnian.apps.chatter.tool引用\n
         Key(原始)\n

@@ -1,6 +1,7 @@
 # Tiny-Py-Chatter  
 # Powerd By Redis Python3 Pydantic  
 # 快速开始 pip install linnian-apps-chatter 
+``` python
     from linnian.apps.chatter import Chater
     from linnian.apps.chatter.tool import Tool
     import asyncio
@@ -13,10 +14,9 @@
             Tool.createKey('qwq', 1234),  # 使用工具快速实例化Key
             Tool.createReply('qwq', 1234)  # 使用工具快速实例化Reply
         )
-        print(
-            await chat.get_reply(
-                Tool.createKey('qwq', 1234))
-        )
+    
+        resp = await chat.get_reply(Tool.createKey('qwq', 1234)) # 此处必须赋值
+        print(resp.reply)
 
     asyncio.run(main())
-  
+``` 
