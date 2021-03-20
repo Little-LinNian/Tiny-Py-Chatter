@@ -1,16 +1,22 @@
 [tool.poetry]
-name = "linnian-tiny-py-chatter"
-version = "0.1.0"
+name = "linnian-apps-chatter"
+version = "0.1.3"
 description = "qwq"
-authors = ["LinNian"]
+authors = ["LinNian <2544704967@qq.com>"]
 license = "MIT"
+packages = [
+    { include = "linnian", from = "src" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
 ujson = "^4.0.2"
 aioredis = "^1.3.1"
+pydantic = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
+
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
