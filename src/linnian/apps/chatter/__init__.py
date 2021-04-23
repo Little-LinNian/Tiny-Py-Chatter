@@ -38,6 +38,8 @@ class Chatter():
         self.load_file()  # 确保实例化对象时被文件加载
 
     def helloworld(self):
+        '''初始化配置文件'''
+        
         log.info('开始初始化文件')
         time.sleep(5)
         open(self.configfile, mode='w+').write('{"Hello": "World"}')

@@ -80,7 +80,7 @@ class Key(BaseModel):
 
     @classmethod
     def create(cls, content: str, scope: Scope) -> 'Key':
-        '''承载键值'''
+        '''承载触发值'''
 
         return cls(content=content, scope=scope)
 
@@ -92,6 +92,7 @@ class Reply(BaseModel):
 
     @classmethod
     def create(cls, content: ReplyContent,  changer: int) -> 'Reply':
+        '''承载回复键'''
         return cls(content=content, changer=changer)
 
 
@@ -102,4 +103,5 @@ class Chat(BaseModel):
 
     @classmethod
     def create(cls, key: Key, reply: Reply) -> 'Chat':
+        '''承载一个完整的Key: Reply'''
         return cls(key=key, reply=reply)

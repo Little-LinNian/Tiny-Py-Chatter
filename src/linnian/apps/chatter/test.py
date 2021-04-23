@@ -1,5 +1,3 @@
-# Eaxmple:  
-```python
 from pathlib import Path
 from linnian.apps.chatter import Chatter
 from linnian.apps.chatter.utils import easy_chat, easy_key, easy_reply
@@ -27,4 +25,3 @@ async def main():
     print(reply) # Out: None
 
 loop.run_until_complete(main())
-```
